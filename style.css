@@ -134,6 +134,11 @@ aside>ul {
   font-size: 1rem;
 }
 
+.subtitle .active,
+.title .active {
+  font-weight: bold;
+}
+
 .subtitle {
   font-size: 0.85rem;
   padding-left: 0.5rem;
@@ -142,6 +147,11 @@ aside>ul {
 .title>a,
 .subtitle>a {
   text-decoration: none;
+}
+
+.title>a:visited,
+.subtitle>a {
+  color: #454545;
 }
 
 .title>a:hover,
