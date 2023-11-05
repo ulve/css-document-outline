@@ -4,7 +4,7 @@ let startup = () => {
     let options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0
+        threshold: 1.0
     };
 
     function callback(entries) {
