@@ -89,7 +89,6 @@ textarea:not([rows]) {
 }
 
 /* Own */
-
 html {
   scroll-behavior: smooth;
 }
@@ -98,9 +97,8 @@ body {
   font-size: 1.125rem;
   font-family: 'Inter', sans-serif;
   color: #454545;
-  background-color: #edf4ef;
+  background-color: #fafafa;
 }
-
 
 .container {
   --aside-width: clamp(9rem, 20vw, 15rem);
@@ -110,6 +108,7 @@ body {
   grid-template-rows: auto;
   gap: var(--gap-size);
   grid-auto-flow: dense;
+  margin-bottom: 70vh;
 }
 
 .logo {
@@ -119,7 +118,7 @@ body {
 
 .page-title {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 200;
   margin: 1rem 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
@@ -141,18 +140,30 @@ aside>ul {
   list-style: none;
 }
 
-.title {
-  font-size: 1rem;
+aside li {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.subtitle .active,
-.title .active {
-  font-weight: bold;
+.title {
+  font-size: 1rem;
+  transition: all 0.5s ease-out;
+
 }
 
 .subtitle {
   font-size: 0.85rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
+  transition: all 0.5s ease-out;
+
+}
+
+ul>.active {
+  background-color: hsl(99, 66%, 47%, 0.3);
+}
+
+ul>.active~.active {
+  background-color: hsl(99, 66%, 47%, 0.2);
 }
 
 .title>a,
