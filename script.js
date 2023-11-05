@@ -18,7 +18,7 @@ let startup = () => {
         })
     }
 
-    targets = document.querySelectorAll('h1, h2');
+    targets = document.querySelectorAll('main h1, main h2');
     targets.forEach(target => {
         let observer = new IntersectionObserver(callback, options);
         observer.observe(target);
